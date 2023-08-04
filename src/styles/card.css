@@ -1,10 +1,12 @@
 .cardName {
     position: relative;
     overflow: hidden;
+    margin-left:40px;
+    margin-right: 40px;
     width: 320px;
     height: 480px;
     border: 4px solid #1698D9;
-    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
     background-color: #F2F2F2;
     border-top-right-radius: 12px;
     border-bottom-right-radius:12px;
@@ -15,10 +17,12 @@
 .cardNameRed {
     position: relative;
     overflow: hidden;
+    margin-left:40px;
+    margin-right: 40px;
     width: 320px;
     height: 480px;
     border: 4px solid #D91667;
-    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
     background-color: #F2F2F2;
     border-top-right-radius: 12px;
     border-bottom-right-radius:12px;
@@ -27,21 +31,21 @@
 }
 .cardName-linear {
     position: relative;
-    left: -24px;
+    left: -28px;
     top: 10px;
     background-color: #1698D9;
     width: 100px;
-    height: 4px;
-    transform: rotateZ(-45deg);
+    height: 5px;
+    transform: rotateZ(-43deg);
 }
 .cardName-linearRed {
     position: relative;
-    left: -24px;
+    left: -28px;
     top: 10px;
     background-color: #D91667;
     width: 100px;
-    height: 4px;
-    transform: rotateZ(-45deg);
+    height: 5px;
+    transform: rotateZ(-43deg);
 }
 
 .cardName-weight {
@@ -109,7 +113,7 @@
 
 .cardName-title_low{
     color: #666;
-    font-family: Exo,sans-serif;
+    font-family: Trebuchet MS,sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -118,7 +122,7 @@
 }
 
 .cardName-title_high {
-    font-family: Exo,sans-serif;
+    font-family: Trebuchet MS,sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -126,17 +130,18 @@
 }
 
 .cardName-title_medium {
-    font-family: Exo,sans-serif;
+    font-family: Trebuchet MS,sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 15px;
 }
 
 .footerCard{
     color: #FFF;
     text-align: center;
-    font-family: Exo,sans-serif;
+    font-family: Trebuchet MS,sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -150,6 +155,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
 }
 
 .cardName-main:hover .cardName {

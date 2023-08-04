@@ -17,3 +17,6 @@ code {
   src: url("./fonts/Exo2.0-Thin.otf");
   /*font-weight: 400;*/
 }
+* {
+  box-sizing: border-box;
+}

@@ -5,7 +5,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <Card/>
+          <div className="headerText">Ты сегодня покормил кота?</div>
+          <div className="mainBlock">
+              <Card weightNumber={"0,5"} eat={"с фуа-гра"}/>
+              <Card weightNumber={"2"} eat={"с рыбой"}/>
+              <Card weightNumber={"5"} eat={"с курой"}/>
+          </div>
       </header>
     </div>
   );

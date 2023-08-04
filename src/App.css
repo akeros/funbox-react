@@ -12,3 +12,21 @@
   justify-content: center;
 }
 
+.headerText {
+  width: 1120px;
+  margin-bottom: 24px;
+  color: #FFF;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  text-shadow: 0 1px 1px #000;
+  font-family: Exo,sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 44px
+}
+
+.mainBlock {
+  display: flex;
+}
+
