@@ -20,21 +20,24 @@ export const Card = React.memo((props) => {
     onClick,
   } = props
 
+  // текст футера в зависимости от состояния
   const footerText = useMemo(() => {
-    switch (true) {
-      case isSelected:
-        return flavorDescription;
-      case ended:
-        return endedText(flavor);
-      default:
-        return (
-          <>
-            Чего сидишь? Порадуй котэ,<span className="footerCard-link" onClick={onClick}> купи.</span>
-          </>
-        )
+    if (isSelected) {
+      return flavorDescription;
     }
+
+    if (ended) {
+      return endedText(flavor);
+    }
+
+    return (
+      <span>
+        Чего сидишь? Порадуй котэ, <button className="footerCard-link" onClick={onClick}>купи</button>.
+      </span>
+    )
   }, [isSelected, flavorDescription, ended, flavor, onClick])
 
+  // выбор стилей в зависимости от состояния
   const cardStyle = useMemo(() => {
     if (isSelected) {
       return 'cardActive';
@@ -83,7 +86,7 @@ export const Card = React.memo((props) => {
           <div className="card-weight_number">{size}</div>
           <div className="card-weight_string">{union}</div>
         </div>
-        <img className="card-catImage" src={cat} alt={"Красивый кот"}/>
+        <img className="card-catImage" src={cat} alt={cat}/>
         <div className="card-title">
           <div className="card-title_low">{currentDescription}</div>
           <div className="card-title_high">{title}</div>

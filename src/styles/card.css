@@ -66,7 +66,7 @@
 .card-linear {
     position: relative;
     left: -28px;
-    top: 4px;
+    top: 10px;
     background-color: #1698D9;
     width: 100px;
     height: 5px;
@@ -75,7 +75,7 @@
 .cardActive-linear {
     position: relative;
     left: -28px;
-    top: 4px;
+    top: 10px;
     background-color: #D91667;
     width: 100px;
     height: 5px;
@@ -85,7 +85,7 @@
 .cardDisabled-linear {
     position: relative;
     left: -28px;
-    top: 4px;
+    top: 10px;
     background-color: #1698D9;
     width: 100px;
     height: 5px;
@@ -188,17 +188,16 @@
     font-weight: 400;
     line-height: normal;
     height: 16px;
-    letter-spacing: -0.02em;
 }
 
 .footerCard-link {
     color: #1698D9;
-    font-family: Exo,sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     cursor: pointer;
+    text-decoration: #1698D9 dashed underline;
 }
 
 .card:hover {
