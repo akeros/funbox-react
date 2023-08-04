@@ -13,7 +13,6 @@
 }
 
 .headerText {
-  width: 1120px;
   margin-bottom: 24px;
   color: #FFF;
   text-align: center;
@@ -27,6 +26,26 @@
 }
 
 .mainBlock {
-  display: flex;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr ;*/
+  grid-template-areas: "a b c";
+  gap: 80px;
+}
+
+@media screen and (max-width: 1136px) and (min-width: 736px) {
+  .mainBlock {
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: "a a" "b c";
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .mainBlock {
+    grid-template-areas: "a" "b" "c";
+    gap: 40px;
+  }
 }
 

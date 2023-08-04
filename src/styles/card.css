@@ -1,8 +1,19 @@
-.cardName {
+.card-main {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
     position: relative;
     overflow: hidden;
-    margin-left:40px;
-    margin-right: 40px;
+    /*margin-left:40px;*/
+    /*margin-right: 40px;*/
     width: 320px;
     height: 480px;
     border: 4px solid #1698D9;
@@ -14,11 +25,14 @@
     margin-bottom: 14px;
 }
 
-.cardNameRed {
+.cardActive {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
     position: relative;
     overflow: hidden;
-    margin-left:40px;
-    margin-right: 40px;
+    /*margin-left:40px;*/
+    /*margin-right: 40px;*/
     width: 320px;
     height: 480px;
     border: 4px solid #D91667;
@@ -29,51 +43,82 @@
     border-bottom-left-radius: 12px;
     margin-bottom: 14px;
 }
-.cardName-linear {
+
+.cardDisabled {
+    display: flex;
+    flex-direction: column;
+    cursor: not-allowed;
+    position: relative;
+    overflow: hidden;
+    /*margin-left:40px;*/
+    /*margin-right: 40px;*/
+    width: 320px;
+    height: 480px;
+    border: 4px solid #1698D9;
+    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+    background-color: #F2F2F2;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius:12px;
+    border-bottom-left-radius: 12px;
+    margin-bottom: 14px;
+}
+
+.card-linear {
     position: relative;
     left: -28px;
-    top: 10px;
+    top: 4px;
     background-color: #1698D9;
     width: 100px;
     height: 5px;
     transform: rotateZ(-43deg);
 }
-.cardName-linearRed {
+.cardActive-linear {
     position: relative;
     left: -28px;
-    top: 10px;
+    top: 4px;
     background-color: #D91667;
     width: 100px;
     height: 5px;
     transform: rotateZ(-43deg);
 }
 
-.cardName-weight {
-    right: 16px;
+.cardDisabled-linear {
+    position: relative;
+    left: -28px;
+    top: 4px;
+    background-color: #1698D9;
+    width: 100px;
+    height: 5px;
+    transform: rotateZ(-43deg);
+}
+
+.card-weight {
     position: absolute;
+    right: 16px;
+    bottom: 16px;
     min-height: 80px;
     min-width: 80px;
     border-radius: 50%;
-    bottom: 16px;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px 0 10px;
     background-color: #1698D9;
 }
 
-.cardName-weightRed {
-    right: 16px;
-    position: absolute;
-    min-height: 80px;
-    min-width: 80px;
-    border-radius: 50%;
-    bottom: 16px;
-    z-index: 1;
+.cardActive-weight {
     background-color: #D91667;
 }
 
-.cardName-weight_number{
-    position: absolute;
-    inset: 0;
-    top: 15px;
+.cardDisabled-weight {
+    background-color: #1698D9;
+}
+
+.card-weight_number{
+    /*position: absolute;*/
+    /*inset: 0;*/
+    /*top: 15px;*/
     color: #FFF;
     text-align: center;
     font-size: 42px;
@@ -82,11 +127,11 @@
     line-height: 22px
 }
 
-.cardName-weight_string{
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 10px;
+.card-weight_string{
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    /*bottom: 10px;*/
     color: #FFF;
     font-size: 21px;
     font-style: normal;
@@ -94,15 +139,15 @@
     line-height: 22px;
 }
 
-.cardName-catImage {
+.card-catImage {
     position: absolute;
-    bottom: -93px;
-    left: -28px;
-    width: 368px;
     height: 360px;
+    left: -24px;
+    right: -24px;
+    bottom: -88px;
 }
 
-.cardName-title {
+.card-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,9 +156,8 @@
     margin-top: 20px;
 }
 
-.cardName-title_low{
+.card-title_low{
     color: #666;
-    font-family: Trebuchet MS,sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -121,16 +165,14 @@
     margin-bottom: 5px;
 }
 
-.cardName-title_high {
-    font-family: Trebuchet MS,sans-serif;
+.card-title_high {
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-.cardName-title_medium {
-    font-family: Trebuchet MS,sans-serif;
+.card-title_medium {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -141,11 +183,12 @@
 .footerCard{
     color: #FFF;
     text-align: center;
-    font-family: Trebuchet MS,sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    height: 16px;
+    letter-spacing: -0.02em;
 }
 
 .footerCard-link {
@@ -158,24 +201,36 @@
     cursor: pointer;
 }
 
-.cardName-main:hover .cardName {
+.card:hover {
     border: 4px solid #2EA8E6;
 }
-.cardName-main:hover .footerCard-link {
+.card:hover .footerCard-link {
     color: #22A7E9;
 }
-.cardName-main:hover .cardName-weight {
+.card:hover .card-weight,
+.card:hover .card-linear {
     background-color: #2EA8E6;
 }
 
-
-.cardName-main:hover .cardNameRed {
+.card:active {
     border: 4px solid #E52E7A;
 }
-.cardName-main:hover .cardName-weightRed {
+.card:active .footerCard-link {
+    color: #22A7E9;
+}
+.card:active .card-weight,
+.card:active .card-linear {
     background-color: #E52E7A;
 }
 
-/*.cardName:hover {*/
+.cardActive:hover {
+    border: 4px solid #E52E7A;
+}
+.cardActive:hover .cardActive-weight,
+.cardActive:hover .cardActive-linear {
+    background-color: #E52E7A;
+}
+
+/*.card:hover {*/
 /*    border: 4px solid #2EA8E6;*/
 /*}*/
