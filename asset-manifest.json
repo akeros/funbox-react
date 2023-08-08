@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/funbox-react.git/static/css/main.9edd3e9c.css",
-    "main.js": "/funbox-react.git/static/js/main.e24d8da3.js",
-    "static/js/787.1b0ceb40.chunk.js": "/funbox-react.git/static/js/787.1b0ceb40.chunk.js",
-    "static/media/catBarsik.png": "/funbox-react.git/static/media/catBarsik.5a59a8dfb85bee52c6a8.png",
-    "static/media/Pattern.png": "/funbox-react.git/static/media/Pattern.7858f3d0f9b100e9018a.png",
-    "static/media/Exo2.0-Thin.otf": "/funbox-react.git/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
-    "index.html": "/funbox-react.git/index.html",
-    "main.9edd3e9c.css.map": "/funbox-react.git/static/css/main.9edd3e9c.css.map",
-    "main.e24d8da3.js.map": "/funbox-react.git/static/js/main.e24d8da3.js.map",
-    "787.1b0ceb40.chunk.js.map": "/funbox-react.git/static/js/787.1b0ceb40.chunk.js.map"
+    "main.css": "/funbox-react/static/css/main.6a4ab676.css",
+    "main.js": "/funbox-react/static/js/main.3d09a882.js",
+    "static/js/787.1b0ceb40.chunk.js": "/funbox-react/static/js/787.1b0ceb40.chunk.js",
+    "static/media/catBarsik.png": "/funbox-react/static/media/catBarsik.5a59a8dfb85bee52c6a8.png",
+    "static/media/Pattern.png": "/funbox-react/static/media/Pattern.7858f3d0f9b100e9018a.png",
+    "static/media/Exo2.0-Thin.otf": "/funbox-react/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
+    "index.html": "/funbox-react/index.html",
+    "main.6a4ab676.css.map": "/funbox-react/static/css/main.6a4ab676.css.map",
+    "main.3d09a882.js.map": "/funbox-react/static/js/main.3d09a882.js.map",
+    "787.1b0ceb40.chunk.js.map": "/funbox-react/static/js/787.1b0ceb40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9edd3e9c.css",
-    "static/js/main.e24d8da3.js"
+    "static/css/main.6a4ab676.css",
+    "static/js/main.3d09a882.js"
   ]
 }
