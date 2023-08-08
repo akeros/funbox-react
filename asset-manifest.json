@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/akeros/funbox-react.git/static/css/main.e01f40b2.css",
-    "main.js": "/akeros/funbox-react.git/static/js/main.4e07e46f.js",
-    "static/js/787.1b0ceb40.chunk.js": "/akeros/funbox-react.git/static/js/787.1b0ceb40.chunk.js",
-    "static/media/catBarsik.png": "/akeros/funbox-react.git/static/media/catBarsik.5a59a8dfb85bee52c6a8.png",
-    "static/media/Pattern.png": "/akeros/funbox-react.git/static/media/Pattern.7858f3d0f9b100e9018a.png",
-    "static/media/Exo2.0-Thin.otf": "/akeros/funbox-react.git/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
-    "index.html": "/akeros/funbox-react.git/index.html",
-    "main.e01f40b2.css.map": "/akeros/funbox-react.git/static/css/main.e01f40b2.css.map",
-    "main.4e07e46f.js.map": "/akeros/funbox-react.git/static/js/main.4e07e46f.js.map",
-    "787.1b0ceb40.chunk.js.map": "/akeros/funbox-react.git/static/js/787.1b0ceb40.chunk.js.map"
+    "main.css": "/funbox-react.git/static/css/main.9edd3e9c.css",
+    "main.js": "/funbox-react.git/static/js/main.e24d8da3.js",
+    "static/js/787.1b0ceb40.chunk.js": "/funbox-react.git/static/js/787.1b0ceb40.chunk.js",
+    "static/media/catBarsik.png": "/funbox-react.git/static/media/catBarsik.5a59a8dfb85bee52c6a8.png",
+    "static/media/Pattern.png": "/funbox-react.git/static/media/Pattern.7858f3d0f9b100e9018a.png",
+    "static/media/Exo2.0-Thin.otf": "/funbox-react.git/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
+    "index.html": "/funbox-react.git/index.html",
+    "main.9edd3e9c.css.map": "/funbox-react.git/static/css/main.9edd3e9c.css.map",
+    "main.e24d8da3.js.map": "/funbox-react.git/static/js/main.e24d8da3.js.map",
+    "787.1b0ceb40.chunk.js.map": "/funbox-react.git/static/js/787.1b0ceb40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e01f40b2.css",
-    "static/js/main.4e07e46f.js"
+    "static/css/main.9edd3e9c.css",
+    "static/js/main.e24d8da3.js"
   ]
 }
