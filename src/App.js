@@ -1,6 +1,6 @@
 import './App.css';
 import { Card } from "./components/Card";
-import {useCallback, useState} from "react";
+import { useCallback, useState } from "react";
 import cardsData from './cards.json'
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
                 flavorDescription={card.flavorDescription}
                 info={card.info}
                 union={card.union}
-                ended={card.ended}
+                disabled={card.ended}
               />
             ))}
           </div>

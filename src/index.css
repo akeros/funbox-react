@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #1698D9;
+  --primary-hover-color: #2EA8E6;
+  --active-color: #D91667;
+  --active-hover-color: #E52E7A;
+  --warning-color: #FFFF66;
+  --background-color: #F2F2F2;
+  --disabled-color: #B3B3B3;
+  --text-color: #666666;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

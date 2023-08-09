@@ -14,87 +14,69 @@
     overflow: hidden;
     width: 320px;
     height: 480px;
-    border: 4px solid #1698D9;
-    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
-    background-color: #F2F2F2;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius:12px;
-    border-bottom-left-radius: 12px;
+    border: 4px solid var(--primary-color);
+    clip-path: polygon(12.3% 0, 100% 0, 100% 100%, 0 100%, 0 8.2%);
+    background-color: var(--background-color);
+    border-radius: 12px;
     margin-bottom: 14px;
 }
 
 .cardActive {
-    border: 4px solid #D91667;
+    border: 4px solid var(--active-color);
 }
 
 .cardDisabled {
-    display: flex;
-    flex-direction: column;
     cursor: not-allowed;
-    position: relative;
-    overflow: hidden;
-    width: 320px;
-    height: 480px;
-    border: 4px solid #B3B3B3;
-    clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
-    background-color: #F2F2F2;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius:12px;
-    border-bottom-left-radius: 12px;
-    margin-bottom: 14px;
+    border: 4px solid var(--disabled-color);
 }
 
 .card-linear {
     position: relative;
     left: -28px;
     top: 10px;
-    background-color: #1698D9;
+    background-color: var(--primary-color);
     width: 100px;
     height: 5px;
-    transform: rotateZ(-43deg);
+    transform: rotateZ(-45deg);
 }
 .cardActive-linear {
-    background-color: #D91667;
-}
-
-.cardDisabled-linear {
-    background-color: #B3B3B3;
+    background-color: var(--active-color);
 }
 
 .card-weight {
     position: absolute;
     right: 16px;
     bottom: 16px;
-    min-height: 80px;
-    min-width: 80px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 18px 0 10px;
-    background-color: #1698D9;
+    background-color: var(--primary-color);
 }
 
 .cardActive-weight {
-    background-color: #D91667;
+    background-color: var(--active-color);
 }
 
 .cardDisabled-weight {
-    background-color: #B3B3B3;
+    background-color: var(--disabled-color);
 }
 
-.card-weight_number{
-    color: #FFF;
+.card-weight_number {
+    color: var(--white-color);
     text-align: center;
     font-size: 42px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px
+    line-height: 22px;
 }
 
-.card-weight_string{
-    color: #FFF;
+.card-weight_string {
+    color: var(--white-color);
     font-size: 21px;
     font-style: normal;
     font-weight: 400;
@@ -118,21 +100,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-left: 53px;
+    margin-top: 8px;
 }
 
 .card-titleDisabled {
-    opacity: 0.15;
+    color: var(--disabled-color);
+    opacity: 0.5;
 }
 
-.card-title_low{
-    color: #666;
+.card-title_low {
+    color: var(--text-color);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 5px;
+}
+
+.card-title_low-active {
+    color: var(--active-hover-color);
 }
 
 .card-title_high {
@@ -152,7 +139,7 @@
 
 .card-title_flavorDescription {
     display: flex;
-    color: #666;
+    color: var(--text-color);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -163,8 +150,8 @@
     font-weight: 700;
 }
 
-.footerCard{
-    color: #FFF;
+.footerCard {
+    color: var(--white-color);
     text-align: center;
     font-size: 13px;
     font-style: normal;
@@ -172,57 +159,57 @@
     line-height: normal;
     height: 16px;
 }
-.footerCard-Disabled{
-    color: #FFFF66;
+.footerCard-Disabled {
+    color: var(--warning-color);
 }
 
 .footerCard-link {
-    color: #1698D9;
+    color: var(--primary-color);
     font-weight: 700;
     cursor: pointer;
 }
 
 .card:hover {
-    border: 4px solid #2EA8E6;
+    border: 4px solid var(--primary-hover-color);
 }
 .card:hover .footerCard-link {
-    color: #22A7E9;
+    color: var(--primary-color);
 }
 .card:hover .card-weight,
 .card:hover .card-linear {
-    background-color: #2EA8E6;
+    background-color: var(--primary-hover-color);
 }
 
 .card:active {
-    border: 4px solid #E52E7A;
+    border: 4px solid var(--active-hover-color);
 }
 .card:active .footerCard-link {
-    color: #22A7E9;
+    color: var(--primary-color);
 }
 .card:active .card-weight,
 .card:active .card-linear {
-    background-color: #E52E7A;
+    background-color: var(--active-hover-color);
 }
 
 .cardActive:hover {
-    border: 4px solid #E52E7A;
-}
-.cardActive:hover .cardActive-weight,
-.cardActive:hover .cardActive-linear {
-    background-color: #E52E7A;
-}
-/* .cardDisabled:hover, .cardDisabled:active {*/
-/*     border: 4px solid #B3B3B3;*/
-/* }*/
-/*.cardDisabled-linear:active, .cardDisabled-linear:hover,*/
-/*.cardDisabled-weight:active, .cardDisabled-weight:hover {*/
-/*    background-color: #B3B3B3;*/
-/*}*/
-.cardDisabled:hover .cardDisable-linear, .cardDisabled:active .cardDisable-linear {
-    background-color: #B3B3B3;
-    /*border: 4px solid #B3B3B3;*/
+    border: 4px solid var(--active-hover-color);
 }
 
-/*.card:hover {*/
-/*    border: 4px solid #2EA8E6;*/
-/*}*/
+.cardActive:hover .cardActive-weight,
+.cardActive:hover .cardActive-linear {
+    background-color: var(--active-hover-color);
+}
+
+.cardDisabled-linear,
+.card:active .cardDisabled-linear,
+.card:active .cardDisabled-weight,
+.card:hover .cardDisabled-linear,
+.card:hover .cardDisabled-weight {
+    background-color: var(--disabled-color);
+}
+
+.card-main .cardDisabled,
+.card:active .cardDisabled,
+.card:hover .cardDisabled {
+    border: 4px solid var(--disabled-color);
+}

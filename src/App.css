@@ -4,7 +4,6 @@
 
 
 .App-header {
-  /*background-color: #282c34;*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,10 +13,10 @@
 
 .headerText {
   margin-bottom: 24px;
-  color: #FFF;
+  color: var(--white-color);
   text-align: center;
   font-feature-settings: 'clig' off, 'liga' off;
-  text-shadow: 0 1px 1px #000;
+  text-shadow: 0 1px 1px var(--black-color);
   font-family: Exo,sans-serif;
   font-size: 36px;
   font-style: normal;
