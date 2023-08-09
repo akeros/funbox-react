@@ -27,12 +27,14 @@ export const Card = React.memo((props) => {
     }
 
     if (ended) {
-      return endedText(flavor);
+      return (
+          <div className="footerCard footerCard-Disabled">{endedText(flavor)}</div>
+      );
     }
 
     return (
       <span>
-        Чего сидишь? Порадуй котэ, <button className="footerCard-link" onClick={onClick}>купи</button>.
+        Чего сидишь? Порадуй котэ, <button className="footerCard footerCard-link" onClick={onClick}>купи</button>.
       </span>
     )
   }, [isSelected, flavorDescription, ended, flavor, onClick])
@@ -76,23 +78,23 @@ export const Card = React.memo((props) => {
   return (
     <div className="card-main" style={{ gridArea: id }}>
       <button
-        className={cardStyle}
+        className={`card ${cardStyle}`}
         onClick={ended ? () => {} : onClick}
         onMouseEnter={hoverStart}
         onMouseLeave={hoverEnd}
       >
-        <div className={`${cardStyle}-linear`} />
+        <div className={`card-linear ${cardStyle}-linear`}/>
         <div className={`card-weight ${cardStyle}-weight`}>
           <div className="card-weight_number">{size}</div>
           <div className="card-weight_string">{union}</div>
         </div>
-        <img className="card-catImage" src={cat} alt={cat}/>
-        <div className="card-title">
+        <img className={ended ? "card-catImage card-catImageDisabled" : "card-catImage"} src={cat} alt={cat}/>
+        <div className={ended ? "card-title card-titleDisabled" : "card-title"}>
           <div className="card-title_low">{currentDescription}</div>
           <div className="card-title_high">{title}</div>
           <div className="card-title_medium">{flavor}</div>
-          {info?.map((text) => (
-            <div key={text}>{text}</div>
+          {info?.map(({count, text}) => (
+            <div className="card-title_flavorDescription" key={text}><span><span className={"card-title_flavorDescriptionNumber"}>{count}{" "}</span>{text}</span></div>
           ))}
         </div>
       </button>
